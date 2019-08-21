@@ -460,7 +460,7 @@ __out_ecount_z_opt(cchBuffer) LPWSTR pBuffer,
         PRECONDITION(CheckPointer(pdwLength));
     } CONTRACTL_END;
         
-    HRESULT hr;
+    HRESULT hr = S_OK;
     BEGIN_ENTRYPOINT_NOTHROW;
     
     if ((pBuffer != NULL) && (cchBuffer > 0))
